@@ -1,8 +1,5 @@
-<script context="module" lang="ts">
-	export const prerender = true;
-</script>
-
 <script lang="ts">
+	import logo from '$lib/assets/malice-logo.jpg';
 </script>
 
 <svelte:head>
@@ -10,7 +7,7 @@
 </svelte:head>
 
 <section>
-	<img src="malice-logo.jpg" alt="Welcome" />
+	<img src={logo} alt="logo" />
 	<h1>For now, there isn't much to see here...</h1>
 	<h2>Maybe you want to go to <span><a href="/videos"> videos</a></span>?</h2>
 </section>
