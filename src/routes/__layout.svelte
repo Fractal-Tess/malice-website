@@ -3,16 +3,27 @@
 	import '../app.css';
 </script>
 
-<Header />
+<div class="main">
+	<Header />
 
-<main>
-	<slot />
-</main>
+	<div class="content">
+		<slot />
+	</div>
 
-<footer />
+	<footer>
+		<p>This is verison <span><a href="#">0.1</a></span> of Malice/Mircle file server</p>
+	</footer>
+</div>
 
 <style>
-	main {
+	.main {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		max-width: 100vw;
+		min-height: 100vh;
+	}
+	.content {
 		flex: 1;
 		display: flex;
 		flex-direction: column;
@@ -25,8 +36,8 @@
 
 	footer {
 		display: flex;
+		justify-self: end;
 		flex-direction: column;
-		justify-content: center;
 		align-items: center;
 		padding: 40px;
 	}
