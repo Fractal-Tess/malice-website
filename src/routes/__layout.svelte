@@ -4,7 +4,7 @@
 </script>
 
 <div class="main">
-	<Header />
+	<header />
 
 	<div class="content">
 		<slot />
