@@ -13,13 +13,11 @@
 
 <header class="flex justify-between mx-4 h-12 text-text">
 	<div class="h-full w-8 relative">
-		<a href="/" class="absolute h-20 w-40">
-			<img
-				src="/final-logo.png"
-				alt="logo"
-				class="h-full w-full object-contain"
-			/>
-		</a>
+		<div class="absolute w-24">
+			<a href="/">
+				<img src="/final-logo.png" alt="logo" />
+			</a>
+		</div>
 	</div>
 	<nav class="flex">
 		<svg viewBox="0 0 2 3" aria-hidden="true">
