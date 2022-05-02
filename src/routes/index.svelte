@@ -1,10 +1,6 @@
 <script lang="ts">
 </script>
 
-<svelte:head>
-	<title>Home</title>
-</svelte:head>
-
 <section class="my-12">
 	<h1>
 		Wow... Such empty
