@@ -9,5 +9,5 @@ node_modules
 .vercel
 .output
 
-public/videos/**/*.mp4
-public/videos/**/*.mkv
+static/videos/**/*.mp4
+static/videos/**/*.mkv

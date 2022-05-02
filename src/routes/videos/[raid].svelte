@@ -28,7 +28,13 @@
 				{/each}
 			</div>
 			<div>
-				<a href="" class="bg-secondary rounded-md p-1">Uncut video</a>
+				<a
+					href="{raid}_{folderName}_{uncutFile.substring(
+						0,
+						uncutFile.lastIndexOf('.')
+					)}"
+					class="bg-secondary rounded-md p-1">Uncut video</a
+				>
 			</div>
 		</div>
 	{/each}

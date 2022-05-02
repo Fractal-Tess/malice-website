@@ -37,13 +37,13 @@ async function getFolderContents(filePath: string) {
 }
 
 const getFileStruct = async (raid: 'en' | 'tov') => {
-	const dirs = await fs.readdir(`public/videos/${raid}`, {
+	const dirs = await fs.readdir(`static/videos/${raid}`, {
 		withFileTypes: true
 	});
 	const vfsArray: VideosFileStructure[] = [];
 
 	for (const dir of dirs) {
-		const files = await fs.readdir(`public/videos/${raid}/${dir.name}`, {
+		const files = await fs.readdir(`static/videos/${raid}/${dir.name}`, {
 			withFileTypes: true
 		});
 

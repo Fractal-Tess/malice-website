@@ -20,9 +20,7 @@ const config = {
 		},
 
 	},
-	files: {
-		assets: ['static', 'public']
-	}
+
 }
 
 export default config;
