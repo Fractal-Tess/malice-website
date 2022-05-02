@@ -1,8 +1,9 @@
-<script>
+<script lang="ts">
 	import { browser } from '$app/env';
 
 	import { page } from '$app/stores';
 	import VideoPlayer from 'svelte-video-player';
+	import { capitalize, raidMap } from '$lib/util/raidMap';
 
 	const { raid, folder, clip } = $page.params;
 
@@ -11,33 +12,18 @@
 		`${raid}/${folder}/${clip}.mkv`,
 		`${raid}/${folder}/${clip}.mp4`
 	];
+
+	const fRaid = raidMap.get(raid);
+	const cRaid = capitalize(fRaid);
 </script>
 
 <svelte:head>
-	<title>{raid}/{folder}/{clip}/</title>
-	<meta
-		name="description"
-		content="A video clip of raid:{raid}, recorded at:{folder}, clip:{clip}"
-	/>
-
-	<meta property="og:title" content="{raid}/{folder}/{clip}" />
-	<meta property="og:url" content="malice.jet-black.xyz/" />
-	<meta property="og:type" content="website" />
-	<meta property="og:description" content="Video playlist" />
-	<meta
-		property="og:image"
-		content="https://malice.jet-black.xyz/logo-bg.jpg"
-	/>
-
-	<meta name="twitter:title" content="{raid}/{folder}/{clip}" />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta property="twitter:domain" content="malice.jet-black.xyz" />
-	<meta property="twitter:url" content="malice.jet-black.xyz/" />
-	<meta name="twitter:description" content="Video playlist" />
-	<meta
-		name="twitter:image"
-		content="https://malice.jet-black.xyz:/logo-bg.jpg"
-	/>
+	<title>{cRaid}/{folder}/{clip}</title>
+	<meta name="description" content="Video {cRaid}/{folder}/{clip}" />
+	<meta property="og:title" content="{cRaid}/{folder}/{clip}" />
+	<meta property="og:description" content="Video {cRaid}/{folder}/{clip}" />
+	<meta name="twitter:title" content="{cRaid}/{folder}/{clip}" />
+	<meta name="twitter:description" content="Video {cRaid}/{folder}/{clip}" />
 </svelte:head>
 
 <div class="flex h-full items-center justify-center p-8">

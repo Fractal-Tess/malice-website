@@ -10,6 +10,26 @@
 		type="image/svg"
 		href={'https://malice.jet-black.xyz/favicon.png'}
 	/>
+
+	<meta property="og:url" content="malice.jet-black.xyz/" />
+	<meta property="og:type" content="website" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="twitter:domain" content="malice.jet-black.xyz" />
+	<meta property="twitter:url" content="malice.jet-black.xyz/" />
+
+	<meta
+		property="og:image"
+		content="https://malice.jet-black.xyz/logo-bg.jpg"
+	/>
+	<meta
+		name="twitter:image"
+		content="https://malice.jet-black.xyz:/logo-bg.jpg"
+	/>
+	<meta
+		property="og:image"
+		content="https://malice.jet-black.xyz/logo-bg.jpg"
+	/>
 	<meta property="og:locale" content="en_GB" />
 </svelte:head>
 
