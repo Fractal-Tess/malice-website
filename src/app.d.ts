@@ -4,12 +4,14 @@
 // for information about these interfaces
 declare namespace App {
 	interface Locals {
-		userid: string;
+		theme: Theme | null;
 	}
 
 	// interface Platform {}
 
-	// interface Session {}
+	interface Session {
+		theme: Theme | null;
+	}
 
 	// interface Stuff {}
 }

@@ -8,3 +8,6 @@ node_modules
 !.env.example
 .vercel
 .output
+
+public/videos/**/*.mp4
+public/videos/**/*.mkv
