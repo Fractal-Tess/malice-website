@@ -8,7 +8,7 @@
 	<meta property="og:description" content="Video playlist" />
 	<meta
 		property="og:image"
-		content="https://malice.jet-black.xyz/malice-logo.jpg"
+		content="https://malice.jet-black.xyz/logo-bg.jpg"
 	/>
 
 	<meta name="twitter:title" content="Videos" />
@@ -18,7 +18,7 @@
 	<meta name="twitter:description" content="Video playlist" />
 	<meta
 		name="twitter:image"
-		content="https://malice.jet-black.xyz:/malice-logo.jpg"
+		content="https://malice.jet-black.xyz:/logo-bg.jpg"
 	/>
 </svelte:head>
 

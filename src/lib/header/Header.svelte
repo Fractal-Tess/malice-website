@@ -15,7 +15,7 @@
 	<div class="h-full w-8 relative">
 		<div class="absolute w-24">
 			<a href="/">
-				<img src="/final-logo.png" alt="logo" />
+				<img src="/logo-t.png" alt="logo" />
 			</a>
 		</div>
 	</div>
