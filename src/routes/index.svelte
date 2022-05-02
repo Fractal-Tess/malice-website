@@ -19,7 +19,7 @@
 <section class="my-12">
 	<h1>
 		Wow... Such empty
-		<img src="sad-doge.png" alt="sad-doge" class="h-12 mx-auto" />
+		<img src="sad-doge.png" alt="sad-doge" class="h-30 lg:h-14 mx-auto" />
 	</h1>
 	<br />
 	<h1>Kind of looking for content to put on the main page.</h1>
