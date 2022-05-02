@@ -39,7 +39,8 @@
 	min-w-full
 	h-screen
 	bg-surface-dark
-	text-text"
+	text-text
+	text-4xl lg:text-xl"
 >
 	<Header />
 
