@@ -37,7 +37,7 @@
 	class="{$theme}
 	flex flex-col 
 	min-w-full
-	min-h-scren
+	min-h-screen
 	bg-surface-dark
 	text-text
 	text-4xl lg:text-xl"
