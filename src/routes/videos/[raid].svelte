@@ -30,7 +30,7 @@
 				Session {folderName}
 			</h1>
 		</div>
-		<div class="flex flex-col items-center  w-2/3">
+		<div class="flex flex-col items-center w-2/3 gap-12 lg:gap-6">
 			<div class="flex gap-12 lg:gap-4 mt-4 flex-wrap justify-center ">
 				{#if Array.isArray(cutFiles) && cutFiles.length > 0}
 					{#each cutFiles as cutFile, i}
@@ -44,7 +44,9 @@
 						>
 					{/each}
 				{:else}
-					<h1>Sorry, no content... =(</h1>
+					<h1 class="text-center">
+						Sorry... there is no content for this session.. =(
+					</h1>
 				{/if}
 			</div>
 
@@ -55,7 +57,8 @@
 							0,
 							uncutFile.lastIndexOf('.')
 						)}"
-						class="bg-secondary rounded-md p-1">Uncut video</a
+						class="bg-secondary rounded-lg px-12 py-4 lg:py-2 lg:px-4"
+						>Uncut video</a
 					>
 				</div>
 			{/if}
