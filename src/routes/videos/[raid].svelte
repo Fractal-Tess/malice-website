@@ -18,7 +18,7 @@
 	<meta name="twitter:description" content="Video playlist of {cRaid}" />
 </svelte:head>
 
-<div class="flex flex-col items-center h-full overflow-y-auto">
+<div class="flex flex-col items-center h-full">
 	<img
 		src="/{raid}.jpg"
 		alt="raid splash art "
@@ -26,29 +26,39 @@
 	/>
 	{#each vfsArray as { folderName, uncutFile, cutFiles }}
 		<div class="mt-9 flex flex-col">
-			<h1 class="text-prime font-extrabold text-2xl">{folderName}</h1>
+			<h1 class="text-prime font-extrabold text-4xl lg:text-2xl">
+				Session {folderName}
+			</h1>
 		</div>
-		<div class="flex flex-col items-center">
-			<div class="flex gap-2 my-4 flex-wrap">
-				{#each cutFiles as cutFile, i}
+		<div class="flex flex-col items-center  w-2/3">
+			<div class="flex gap-12 lg:gap-4 mt-4 flex-wrap justify-center ">
+				{#if Array.isArray(cutFiles) && cutFiles.length > 0}
+					{#each cutFiles as cutFile, i}
+						<a
+							href="{raid}_{folderName}_{cutFile.substring(
+								0,
+								cutFile.lastIndexOf('.')
+							)}"
+							class="bg-prime rounded-lg px-12 py-4 lg:py-0 lg:px-4 text-center"
+							>{i}</a
+						>
+					{/each}
+				{:else}
+					<h1>Sorry, no content... =(</h1>
+				{/if}
+			</div>
+
+			{#if uncutFile}
+				<div>
 					<a
-						href="{raid}_{folderName}_{cutFile.substring(
+						href="{raid}_{folderName}_{uncutFile.substring(
 							0,
-							cutFile.lastIndexOf('.')
+							uncutFile.lastIndexOf('.')
 						)}"
-						class="bg-prime rounded-lg w-6 text-center">{i}</a
+						class="bg-secondary rounded-md p-1">Uncut video</a
 					>
-				{/each}
-			</div>
-			<div>
-				<a
-					href="{raid}_{folderName}_{uncutFile.substring(
-						0,
-						uncutFile.lastIndexOf('.')
-					)}"
-					class="bg-secondary rounded-md p-1">Uncut video</a
-				>
-			</div>
+				</div>
+			{/if}
 		</div>
 	{/each}
 	<div />

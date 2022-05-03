@@ -37,14 +37,14 @@
 	class="{$theme}
 	flex flex-col 
 	min-w-full
-	h-screen
+	min-h-scren
 	bg-surface-dark
 	text-text
 	text-4xl lg:text-xl"
 >
 	<Header />
 
-	<div class="flex-1 overflow-auto p-8">
+	<div class="flex-1 p-8">
 		<slot />
 	</div>
 
