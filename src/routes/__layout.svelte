@@ -44,15 +44,9 @@
 >
 	<Header />
 
-	<div class="flex-1 p-8">
+	<div class="flex flex-col flex-1 p-8  w-full h-full">
 		<slot />
 	</div>
 
-	<footer class="flex flex-col items-center py-8 mt-auto">
-		<p>
-			This is verison <span
-				><a href="/#" class="underline text-prime">0.2</a></span
-			> of Malice file/video server
-		</p>
-	</footer>
+	<footer class="flex flex-col items-center py-8 mt-auto" />
 </div>
